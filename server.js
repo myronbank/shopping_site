@@ -15,7 +15,6 @@ const fanSubmission_AWS2 = require('./routes/fanSubmission');
 require('express-async-errors');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-// const upload_AWS = require('./routes/upload');
 
 dotenv.config();
 
@@ -27,13 +26,11 @@ mongoose.connect(process.env.MONGODB_URL, {
   .then(() => console.log('connected to MongoDB...'))
   .catch(err => console.error("could not connect to MongoDB...", err))
 
-// app.use(cors())
 app.use(express.static('public'))
 app.use(express.static(path.join(__dirname, "client/build")));
 app.use(express.json())
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }))
-// app.use("/api/s3", upload_AWS)
 app.use('/api/contactUs', form)
 app.use('/api/products', product)
 app.use('/api/user', user)
