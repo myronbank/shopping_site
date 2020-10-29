@@ -14,7 +14,7 @@ import PlaceOrderScreen from './route/placeOrderScreen';
 import Header from './components/header';
 import Logout from "./components/logout"
 import isLogIn from './util/userLogInStatus';
-import QdoLogo from './webStaticbackground/qdo_logo.jpg';
+import QdoLogo from './qdo_logo.jpg';
 import FanSubmissionScreen from './route/fanSubmissionScreen';
 import './App.css';
 
