@@ -2,7 +2,7 @@ import React from "react";
 import Form from "../components/form";
 import Joi from "joi";
 import isLogIn from '../util/userLogInStatus';
-import Loader from "../webStaticbackground/round_shape_loader.gif";
+import Loader from "./loader.gif";
 import { submitPhoto } from "../service/submissionService";
 
 class FanSubmissionScreen extends Form {
